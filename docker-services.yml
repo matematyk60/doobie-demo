@@ -1,0 +1,13 @@
+version: '3.2'
+
+services:
+
+  db:
+    image: postgres:9.6
+    ports:
+      - "5432:5432"
+    restart: always
+    environment:
+      POSTGRES_DB: doobie_demo
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: username
