@@ -1,7 +1,6 @@
 import sbt._
 
 object Dependencies {
-  import scalapb.compiler.Version
 
   val codeheroesCommonsVersion = "0.96"
 

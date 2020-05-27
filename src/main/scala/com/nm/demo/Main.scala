@@ -11,7 +11,7 @@ object Main extends IOApp {
     transactionEc <- ExecutionContexts.cachedThreadPool[IO]
     transactor <- HikariTransactor.newHikariTransactor[IO](
       "org.postgresql.Driver",
-      "jdbc:postgresql://localhost:5432/doobie_demo",
+      "jdbc:postgresql://pg-1:5432,pg-2:5432/db_name",
       "username",
       "password",
       connectionEc,
